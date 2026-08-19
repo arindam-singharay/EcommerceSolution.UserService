@@ -1,4 +1,4 @@
-﻿# 🎯 Create Comprehensive README.md for UserService
+﻿# 🎯 UserService
 
 ## Context
 The UserService is part of an e-commerce microservices solution built with .NET 10 following Clean Architecture principles. The project is in early scaffold stage with foundational architecture in place:

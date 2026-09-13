@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Ecommerce.Core.RepositoryContracts;
+using Ecommerce.Infrastructure.UserRepositories;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Ecommerce.Infrastructure
 {
@@ -13,6 +15,7 @@ namespace Ecommerce.Infrastructure
         {
             // Register infrastructure services here
             // Example: services.AddScoped<IMyService, MyService>();
+            services.AddSingleton<IUserRepository, UserRepository>();
             return services;
         }
     }

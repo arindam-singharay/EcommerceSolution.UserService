@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Ecommerce.Core.Services;
+using Ecommerce.Core.ServiceContracts;
 
 namespace Ecommerce.Core
 {
@@ -13,6 +15,7 @@ namespace Ecommerce.Core
         {
             // Register core services here
             // Example: services.AddScoped<IMyService, MyService>();
+            services.AddTransient<IUserService, UserService>();
             return services;
         }
     }
